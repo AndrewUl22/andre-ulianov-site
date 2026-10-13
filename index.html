@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrii Ulianov — Portfolio</title>
+    <meta name="description" content="Portfolio of Andrii Ulianov: Odoo 19 modules, Python, PostgreSQL, React and Next.js.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <section class="portfolio-hero">
+        <div class="container text-center">
+          <img class="portfolio-avatar" src="img/avatar.jpg" alt="Andrii Ulianov">
+          <h1>Andrii Ulianov</h1>
+          <p class="lead">Full-Stack JS Developer (React / Next.js / Node.js) — Aspiring Odoo Developer</p>
+
+          <div class="hero-buttons">
+            <a class="hero-cta" href="https://github.com/AndrewUl22" target="_blank" rel="noopener">
+              <i class="fa fa-github"></i> View code on GitHub
+            </a>
+            <a class="hero-cta hero-cta-outline" href="RESUME_LINK_HERE" target="_blank" rel="noopener">
+              <i class="fa fa-file-pdf-o"></i> Resume (PDF)
+            </a>
+          </div>
+
+          <p class="hero-note">
+            Attended Odoo Experience 2026 ·
+            <a href="https://odoo-portfolio-xfy2.onrender.com/portfolio" target="_blank" rel="noopener">Odoo version of this page</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="portfolio-skills">
+        <div class="container text-center">
+          <span class="portfolio-badge"><i class="fa fa-check-circle"></i>Python</span>
+          <span class="portfolio-badge"><i class="fa fa-check-circle"></i>Odoo ORM</span>
+          <span class="portfolio-badge"><i class="fa fa-check-circle"></i>PostgreSQL</span>
+          <span class="portfolio-badge"><i class="fa fa-check-circle"></i>XML Views</span>
+          <span class="portfolio-badge"><i class="fa fa-check-circle"></i>JavaScript</span>
+          <span class="portfolio-badge"><i class="fa fa-check-circle"></i>Owl Framework</span>
+        </div>
+      </section>
+
+      <section class="portfolio-project">
+        <div class="container">
+          <h2>Project: Library</h2>
+
+          <div class="two-columns">
+            <div>
+              <h4>What it is</h4>
+              <p>
+                A training Odoo module for managing a library:
+                tracking books, members, and loan history.
+                Built from scratch to learn the Odoo framework
+                before applying for a Back-end Developer position.
+              </p>
+            </div>
+
+            <div>
+              <h4>What's inside</h4>
+              <ul>
+                <li>Three related models: book / member / loan</li>
+                <li>Computed fields: book availability, overdue loans</li>
+                <li>"Lend a Book" wizard for the lending workflow</li>
+                <li>Role-based access: two security groups and record rules</li>
+                <li>Form, list, search and kanban views</li>
+                <li>Constraint validation (can't lend an already-borrowed book)</li>
+                <li>Printable PDF "Reading Card" report per member</li>
+                <li>Unit tests and GitHub Actions CI</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="library-cta-wrap">
+            <a class="library-cta" href="https://github.com/AndrewUl22/library" target="_blank" rel="noopener">
+              <i class="fa fa-github"></i>View library on GitHub
+            </a>
+          </div>
+
+          <div class="portfolio-gallery">
+            <figure class="portfolio-shot">
+              <a href="img/library_books.png" target="_blank">
+                <img src="img/library_books.png" alt="Books catalog" loading="lazy">
+              </a>
+              <figcaption>Books catalog</figcaption>
+            </figure>
+
+            <figure class="portfolio-shot">
+              <a href="img/library_lend.png" target="_blank">
+                <img src="img/library_lend.png" alt="Lend a Book wizard" loading="lazy">
+              </a>
+              <figcaption>"Lend a Book" wizard</figcaption>
+            </figure>
+
+            <figure class="portfolio-shot">
+              <a href="img/library_loans.png" target="_blank">
+                <img src="img/library_loans.png" alt="Loans overview" loading="lazy">
+              </a>
+              <figcaption>Loans overview (overdue loan highlighted)</figcaption>
+            </figure>
+
+            <figure class="portfolio-shot">
+              <a href="img/library_reading_card.png" target="_blank">
+                <img src="img/library_reading_card.png" alt="Reading Card report" loading="lazy">
+              </a>
+              <figcaption>Printable "Reading Card" report</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-other-projects">
+        <div class="container">
+          <h2><i class="fa fa-folder-open"></i> Other Projects</h2>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <h4>TravelTrucks RoadNest</h4>
+              <p>Camper rental app: filterable catalog, infinite loading, gallery, reviews, and a booking form.</p>
+              <p class="text-muted small">Next.js 16, React 19, TypeScript, TanStack Query, Swiper</p>
+              <div class="project-links">
+                <a class="project-link project-link-demo" href="https://travel-trucks-road-nest.vercel.app/" target="_blank" rel="noopener"><i class="fa fa-external-link"></i>Live demo</a>
+                <a class="project-link project-link-github" href="https://github.com/AndrewUl22/TravelTrucks-RoadNest" target="_blank" rel="noopener"><i class="fa fa-github"></i>GitHub</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h4>LearnLingo</h4>
+              <p>Language tutor booking platform with Firebase auth, filterable teacher catalog, and favorites.</p>
+              <p class="text-muted small">React 19, Vite, Firebase, React Hook Form + Yup</p>
+              <div class="project-links">
+                <a class="project-link project-link-demo" href="https://learn-lingo-gamma-ruby.vercel.app/" target="_blank" rel="noopener"><i class="fa fa-external-link"></i>Live demo</a>
+                <a class="project-link project-link-github" href="https://github.com/AndrewUl22/LearnLingo" target="_blank" rel="noopener"><i class="fa fa-github"></i>GitHub</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h4>VocabBuilder</h4>
+              <p>Vocabulary trainer: personal dictionary, community word recommendations, and quiz-based training.</p>
+              <p class="text-muted small">React 19, Vite, Redux Toolkit, Axios</p>
+              <div class="project-links">
+                <a class="project-link project-link-demo" href="https://vocab-builder-weld.vercel.app/" target="_blank" rel="noopener"><i class="fa fa-external-link"></i>Live demo</a>
+                <a class="project-link project-link-github" href="https://github.com/AndrewUl22/Vocab-builder" target="_blank" rel="noopener"><i class="fa fa-github"></i>GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-certificate">
+        <div class="container">
+          <h2><i class="fa fa-certificate"></i> Certification</h2>
+          <p class="lead">Fullstack Developer Course — GoIT</p>
+          <p>Completed 24/06/2026 · 872 hours (HTML/CSS, JavaScript, React, Next.js, Node.js, Career Skills)</p>
+          <p class="text-muted">Certificate ID: 46399</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="portfolio-contact">
+      <div class="container">
+        <h3><i class="fa fa-envelope-o"></i>Contact</h3>
+        <p><i class="fa fa-envelope"></i><a class="contact-link-email" href="mailto:anulian22@gmail.com">anulian22@gmail.com</a></p>
+        <p><i class="fa fa-phone"></i>+32 465 987 301</p>
+        <p>
+          <a class="contact-link-github" href="https://github.com/AndrewUl22" target="_blank" rel="noopener"><i class="fa fa-github"></i>GitHub</a>
+          &nbsp;·&nbsp;
+          <a class="contact-link-linkedin" href="https://www.linkedin.com/in/andr%C3%A9-ulianov-717933337/" target="_blank" rel="noopener"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
