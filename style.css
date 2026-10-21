@@ -144,10 +144,46 @@ a {
     color: #ffffff;
 }
 
-.hero-note {
-    margin: 24px 0 0;
+.hero-badge-row {
+    margin: 28px 0 0;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.75);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 20px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-badge:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.28);
+    transform: translateY(-2px);
+}
+
+.hero-badge i {
+    margin-right: 6px;
+}
+
+.hero-badge .hero-badge-arrow {
+    margin: 0 0 0 6px;
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.hero-note {
+    margin: 16px 0 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.92);
 }
 
 .hero-note a {
